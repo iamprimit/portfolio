@@ -1,5 +1,47 @@
+@import "assets/fonts/web-fonts.css";
 
-
-* {
+body {
+    background-color: rgb(254, 254, 254);
     color: rgb(50, 50, 50);
+    font-family: 'Spotify Mix', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Navbar */
+
+header{
+    padding: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-logo img {
+    height: 50px;
+    align-items: center;
+}
+
+.nav-logo {
+    position: left;
+}
+
+nav ul {
+    position: right;
+}
+
+nav ul li {
+    font: 1.2em / 1 "Spotify Mix";
+    font-weight: 500;
+    margin-left: 24px;
+}
+
+
