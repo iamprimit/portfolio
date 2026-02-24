@@ -44,4 +44,12 @@ nav ul li {
     margin-left: 24px;
 }
 
+/* Main */
 
+/* Introduction Section */
+
+.introduction h1 {
+    font-size: 3em;
+    width: 100%;
+    justify-content: center;
+}
