@@ -10,46 +10,42 @@ body {
 
 /* Navbar */
 
-header{
-    padding: 12px;
-}
-
 nav {
     display: flex;
-    justify-content: space-between;
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav-logo img {
-    height: 50px;
+    padding: 2px 20px;
+    height: 60px;
     align-items: center;
 }
 
 .nav-logo {
-    position: left;
+    width: 42px;
+    height: 42px;
+    padding: 0px 20px;
 }
 
-nav ul {
-    position: right;
+.nav-links ul {
+    list-style-type: none;
+    padding: 8px 20px;
+    display: flex;
 }
 
-nav ul li {
-    font: 1.2em / 1 "Spotify Mix";
+.nav-links li {
+    color: rgb(50, 50, 50);
+    border-radius: 28px;
+    padding: 12px;
+    font-size: 14px;
     font-weight: 500;
-    margin-left: 24px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    background-color: rgb(230, 240, 250);
+}
+
+.social-links {
+    margin-left: auto;
 }
 
 /* Main */
 
-/* Introduction Section */
-
-.introduction h1 {
-    font-size: 3em;
-    width: 100%;
-    justify-content: center;
-}
