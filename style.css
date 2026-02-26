@@ -2,13 +2,15 @@
 
 body {
     background-color: rgb(254, 254, 254);
-    color: rgb(50, 50, 50);
+    color: rgb(17, 17, 17);
     font-family: 'Spotify Mix', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar */
+/* Navbar */ 
+
+/* Base CSS (Viewport >= 1000px */
 
 nav {
     display: flex;
@@ -25,27 +27,55 @@ nav {
 
 .nav-links ul {
     list-style-type: none;
-    padding: 8px 20px;
+    padding: 8px 16px;
     display: flex;
 }
 
 .nav-links li {
-    color: rgb(50, 50, 50);
-    border-radius: 28px;
+    border-radius: 40px;
     padding: 12px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 10px;
     cursor: pointer;
 }
 
-.nav-links li:hover {
-    background-color: rgb(230, 240, 250);
+.nav-links ul li:hover {
+    background-color: rgb(240, 241, 243);
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
 }
 
 .social-links {
     margin-left: auto;
 }
 
+.menu-button {
+    display: none; 
+}
+
+/* Tablet (<= 1000px) */
+@media (max-width: 1000px) {
+    .menu-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .social-links {
+        display: none;
+    }
+}
+
+/* Mobile (<= 500px) */
+@media (max-width: 550px) {
+    .nav-options {
+        display: none;
+    }
+}
+
 /* Main */
+
 
