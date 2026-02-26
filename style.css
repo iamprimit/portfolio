@@ -1,11 +1,14 @@
+/* Fonts */
+
 @import "assets/fonts/web-fonts.css";
+
+/* General Style */
 
 body {
     background-color: rgb(254, 254, 254);
     color: rgb(17, 17, 17);
     font-family: 'Spotify Mix', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 /* Navbar */ 
@@ -20,31 +23,37 @@ nav {
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
     width: 42px;
     height: 42px;
-    padding: 0px 20px;
 }
 
 .nav-links ul {
-    list-style-type: none;
-    padding: 8px 16px;
+    list-style: none;
+    margin: 8px 20px;
     display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .nav-links li {
+    cursor: pointer;
     border-radius: 40px;
-    padding: 12px;
+    padding: 10px 10px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 10px;
-    cursor: pointer;
+    line-height: 14px;
 }
 
-.nav-links ul li:hover {
+.nav-links li:hover {
     background-color: rgb(240, 241, 243);
 }
 
-.nav-links ul li a {
+.nav-links li a {
     text-decoration: none;
     color: rgb(17, 17, 17);
 }
@@ -62,6 +71,12 @@ nav {
     .menu-button {
         display: block;
         margin-left: auto;
+        background: none;
+        border: none;
+    }
+    .menu-button img {
+        height: 34px;
+        width: 34px;
     }
 
     .social-links {
@@ -69,8 +84,8 @@ nav {
     }
 }
 
-/* Mobile (<= 500px) */
-@media (max-width: 550px) {
+/* Mobile Layout */
+@media (max-width: 700px) {
     .nav-options {
         display: none;
     }
