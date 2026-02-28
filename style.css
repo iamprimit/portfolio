@@ -93,4 +93,21 @@ nav {
 
 /* Main */
 
+.hero-heading {
+    line-height: 12rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1720px) {
+    .hero-heading {
+        font-size: 19rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .hero-heading {
+        font-size: 12rem;
+    }
+}
+
 
