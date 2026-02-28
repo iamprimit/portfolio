@@ -7,17 +7,28 @@
 body {
     background-color: rgb(254, 254, 254);
     color: rgb(17, 17, 17);
-    font-family: 'Spotify Mix', sans-serif;
     margin: 0;
+    font: 1.2em / 1.6 'Spotify Mix', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Navbar */ 
 
 /* Base CSS (Viewport >= 1000px */
 
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 10px;
+}
+
 nav {
     display: flex;
-    padding: 2px 20px;
+    padding: 8px 20px;
     height: 60px;
     align-items: center;
 }
@@ -93,7 +104,7 @@ nav {
 
 /* Main */
 
-.hero-heading {
+/* .hero-heading {
     line-height: 12rem;
     font-weight: bolder;
 }
@@ -109,5 +120,14 @@ nav {
         font-size: 12rem;
     }
 }
+ */
 
+#souta {
+    height: 300px;
+    width: 300px;
+}
+
+main {
+    padding: 0 20px 20px 20px;
+}
 
