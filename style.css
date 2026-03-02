@@ -1,0 +1,28 @@
+/* Introduction Lines */
+
+.introduction {
+    margin: 50px;
+    text-align: center;
+}
+
+.hero {
+    width: 100%;
+    padding: 50px 30px;
+    align-items: center;
+}
+
+.hero-pictures {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.hero-pictures img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-pictures div {
+    flex: 1;
+    background: aqua;
+}
