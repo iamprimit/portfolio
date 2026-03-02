@@ -1,0 +1,92 @@
+/* Base CSS (Viewport >= 1000px */
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    height: 50px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 42px;
+    height: 42px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 10px;
+
+}
+
+.nav-links li {
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-weight: 300;
+}
+
+.nav-links li:hover {
+    background-color: rgb(240, 241, 243);
+}
+
+
+.social-links {
+    margin-left: auto;
+}
+
+/* Hamburner Menu Button */
+
+.menu-button {
+    display: none;
+}
+
+/* Tablet (<= 1000px) */
+@media (max-width: 1000px) {
+    .menu-button {
+        display: flex;
+        position: left;
+        margin-left: auto;
+        background: none;
+        border: none;
+    }
+    .menu-button img {
+        height: 34px;
+        width: 34px;
+    }
+
+    .social-links {
+        display: none;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+}
